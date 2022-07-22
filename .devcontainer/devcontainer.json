@@ -17,14 +17,15 @@
 
   // Add the IDs of extensions you want installed when the container is created.
   "extensions": [
-    "ms-azuretools.vscode-docker",
-    "GitHub.copilot",
-    "donjayamanne.githistory",
-    "eamodio.gitlens",
-    "mhutchie.git-graph",
-    "steoates.autoimport",
-    "pucelle.run-on-save"
-  ],
+	"ms-azuretools.vscode-docker",
+	"GitHub.copilot",
+	"donjayamanne.githistory",
+	"eamodio.gitlens",
+	"mhutchie.git-graph",
+	"steoates.autoimport",
+	"pucelle.run-on-save",
+	"Prisma.prisma"
+],
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [],
