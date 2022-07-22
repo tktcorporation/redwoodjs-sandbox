@@ -6,3 +6,5 @@ RUN apt-get update && \
     apt-get install -y \
     curl \
     git
+
+RUN curl -sSL https://bina.egoist.sh/egoist/dum | bash
