@@ -1,4 +1,4 @@
-version: "3.7"
+version: "3.8"
 services:
   app:
     command: /bin/bash -c "dum i && dum rw dev"
@@ -6,6 +6,8 @@ services:
     working_dir: /app
     volumes:
       - ./redwoodblog:/app
+    environment:
+      - RWJS_DEV_API_URL=${RWJS_DEV_API_URL:-http://localhost}
     ports:
       - "8910:8910"
       - "8911:8911"
