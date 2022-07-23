@@ -24,7 +24,7 @@ const ContactPage = () => {
     <>
       <MetaTags title="Contact" description="Contact page" />
 
-      <Form onSubmit={onSubmit}>
+      <Form onSubmit={onSubmit} config={{ mode: 'onBlur' }}>
         <Label name="name" errorClassName="error">
           Name
         </Label>
@@ -49,7 +49,7 @@ const ContactPage = () => {
           }}
           errorClassName="error"
         />
-        <FieldError name="name" className="error" />
+        <FieldError name="email" className="error" />
 
         <Label name="message" errorClassName="error">
           Message
@@ -59,7 +59,7 @@ const ContactPage = () => {
           validation={{ required: true }}
           errorClassName="error"
         />
-        <FieldError name="name" className="error" />
+        <FieldError name="message" className="error" />
 
         <Submit>Save</Submit>
       </Form>
