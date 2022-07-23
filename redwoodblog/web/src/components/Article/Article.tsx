@@ -1,6 +1,6 @@
-import { Link, routes } from '@redwoodjs/router'
-
 import type { Post } from 'types/graphql'
+
+import { Link, routes } from '@redwoodjs/router'
 
 interface Props {
   article: Post
