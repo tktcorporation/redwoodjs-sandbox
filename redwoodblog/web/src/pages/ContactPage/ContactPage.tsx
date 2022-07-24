@@ -1,5 +1,8 @@
-import { MetaTags, useMutation } from '@redwoodjs/web'
-import { toast, Toaster } from '@redwoodjs/web/toast'
+import {
+  CreateContactMutation,
+  CreateContactMutationVariables,
+} from 'types/graphql'
+
 import {
   FieldError,
   Form,
@@ -11,11 +14,8 @@ import {
   FormError,
   useForm,
 } from '@redwoodjs/forms'
-
-import {
-  CreateContactMutation,
-  CreateContactMutationVariables,
-} from 'types/graphql'
+import { MetaTags, useMutation } from '@redwoodjs/web'
+import { toast, Toaster } from '@redwoodjs/web/toast'
 
 const CREATE_CONTACT = gql`
   mutation CreateContactMutation($input: CreateContactInput!) {
@@ -51,7 +51,7 @@ const ContactPage = () => {
           name: data.name,
           email: data.email,
           message: data.message,
-        }
+        },
       },
     })
   }
