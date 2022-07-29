@@ -1,0 +1,13 @@
+name: Test
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v3
+      - name: Test
+        run: docker-compose run --rm app /bin/bash -c "dum i && dum rw test"
