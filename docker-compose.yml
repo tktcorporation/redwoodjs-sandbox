@@ -12,8 +12,8 @@ services:
       - DATABASE_URL=postgres://postgres:postgres@db:5432/postgres?connection_limit=1
       - TEST_DATABASE_URL=postgres://postgres:postgres@db-test:5432/postgres_test?connection_limit=1
     ports:
-      - "7910:7910"
-      - "8910:8910"
+      - "7910:7910" # storybook
+      - "8910:8910" # redwoodjs web
       - "8911:8911"
       - "18911:18911"
       - "5555:5555"
